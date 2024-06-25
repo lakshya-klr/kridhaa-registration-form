@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+@font-face {
+    font-family: displayfont;
+    src: url("NeueHaasDisplayRoman.ttf");
+}
+#logo{
+    position:absolute;
+    right:0;
+    height: 100px;
+    width: 100px;
+}
+#logo img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#invoice{
+    position: relative;
+    max-width: 1000px;
+    margin:auto;
+    border:1px solid black;
+    height: 99.5vh;
+    overflow: hidden;
+    font-family: displayfont;
+}
+body{
+    background-color:rgb(255, 255, 255);
+}
+nav{
+    height: 12vh;
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: white;
+}
+nav img{
+    overflow: hidden;
+    object-fit: contain;
+    height: 90%;
+    width: 90vw;
+    margin:auto;
+
+}
+form{
+    /* background-color: red; */
+    height: 87.5vh;
+}
+.inputwrap{
+    height: fit-content;
+    width:20%;
+    padding:10px;
+    /* background-color: yellow; */
+    /* align-items: center; */
+    margin:1vh;
+    margin-bottom:0;
+    font-size: medium;
+    /* border:1px solid black; */
+}
+
+.content{
+
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:auto;
+    margin-left:5vw;
+    height: 80vh;
+    justify-content: start;
+  
+}
+#filechooser{
+    border:1px solid black;
+    background-color: white;
+   /* padding:10px; */
+   display: flex;
+   height: 100%;
+   align-self: center;
+   text-align: center;
+   padding:15px;
+   border-radius: 10px;
+   justify-self: center;
+   /* margin-top:100px; */
+   /* transform: translateY(100%); */
+}
+.inputfeild{
+    width:100%;
+    font-size: medium;
+    height: 5vh;
+    border-radius: 10px;
+    outline:none;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+}
+.fileattach{
+    display:flex;
+    height: 5vh;
+    align-items: center;
+    justify-self: center;
+}
+.inputedimage{
+    /* position:absolute; */
+    height: 18vh;
+    border: 2px solid black;
+    
+    outline:none;
+    width:5vw;
+    border-radius:10px;
+    margin-top:2.5vh;
+}
+
+form h1{
+    font-size: 3vh;
+    margin:auto;
+    margin-left:5vw;
+    width:100%;
+}
+form h3{
+    /* margin-left: 5vw;; */
+    width:100%;
+}
+
+.highlight{
+    color:blue;
+    font-style: italic;
+    margin-top:1vh;
+    /* background-color: green; */
+    height: fit-content;
+    font-size: small;
+    width: 90%;
+}
+.termlist{
+    /* margin:auto; */
+    margin-top:1vh;
+    width:fit-content;
+
+    
+}
+.term{
+    font-size: medium;
+    text-align: left;
+    width:100%;
+    /* background-color: gray; */
+}
+#button{
+    border-radius: 10px;
+    height: 5vh;
+    width: 24%;
+    background-color: rgb(93, 93, 248);
+    color:white;
+    cursor:pointer;
+    
+}
+.btncover{
+    /* background-color: red; */
+    width:40%;
+    /* background-color: red; */
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin:auto; */
+    /* margin-top:5vh; */
+}
+.signbox{
+    /* background-color: green; */
+    height: 50px;
+    border-bottom: 2px solid gray;
+    width: 250px;
+}
+@media only screen and (max-width:600px) {
+    body{
+        /* background-color: red; */
+    }
+    .inputwrap{
+        width:100%;
+        position:relative;
+        /* margin:auto; */
+    }
+    #invoice{
+        /* width: 100vw;
+        margin: auto;
+        
+        height:00%; */
+        border: none;
+        /* height: 100vh; */
+    }
+    .content{
+        margin:auto;
+        width: 100%;
+        height: 70vh;
+    }
+    form{
+        width: 100%;}
+    form h1{
+        margin-left: 0vh;
+    }
+    form h3{
+        margin-left:1vh;
+    }
+    .term{
+        margin-left:2vh;
+    }
+    /* .btncover{
+        margin:auto;
+        justify-content:space-evenly;
+    } */
+    #button{
+        width: 50%;
+    }
+    .signature{
+        width:35%;
+    }
+    .signbox{
+        margin-bottom: 25px;
+        margin-right:10px;
+    }
+    }
+
+
+
+    #downloader{
+        height: 100vh;
+        width: 100vw;
+        /* background-color: red; */
+    }
+    .inputedimage{
+        border: 2px solid black;
+        width: 15vh;
+        height: 15vh;
+        object-fit: cover;
+        
+        /* border-radius: 9999px; */
+        overflow: hidden;
+
+    }
+    .inputedimage img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .smlwidth{
+        width:fit-content;
+    }
+    
+ .emercont{
+    width:100%;
+ }
+ .emercont .flexes{
+    display: flex;
+ }
+ #termheading{
+    width: fit-content;
+    /* background-color: red; */
+    height: fit-content;
+ }
+ .termlist{
+    /* background-color: gainsboro; */
+    height:16vh;
+ }
+ .conditions{
+    /* background-color: blue; */
+    margin-left:2vw;
+    height:fit-content;
+ }
+ .bigwrap{
+    height: fit-content;
+    width: fit-content;
+    /* background-color: brown; */
+ }
+ 
+ .btncover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ }

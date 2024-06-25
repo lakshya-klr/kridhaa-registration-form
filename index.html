@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdf generator</title>
+    <link rel="stylesheet" href="syle.css">
+
+</head>
+<body>
+    <div id="invoice">
+       <!-- <nav><img src="For-Printing-logo-01-1-2048x658.png"></nav> -->
+        <div id="logo">
+            <img src="/Screenshot 2024-06-23 204811.png">
+        </div>
+       <form action="">
+        <h1>Registration Form</h1>
+        <!-- <h3>Personal Details</h3> -->
+        <div class="content">
+            <h3 style="margin-top:5vh">Personal Details<br></h3>
+
+            <!-- name input -->
+             <div class="inputwrap">
+            <label class="labeltext" for="name">Name</label><br>
+            <input id="name" class="inputfeild" type="text" required placeholder="Enter your name">
+            </div>
+
+            <!-- phone input -->
+             <div class="inputwrap">
+            <label class="labeltext" for="phone">Contact.</label><br>
+            <input class="inputfeild" type="tel" id="phone" name="phone" placeholder="Enter phone number" minlength="10" required>
+            </div>
+
+            <!-- DOB input -->
+             <div class="inputwrap">
+            <label class="labeltext" for="dob">DOB</label><br>
+            <input id="dob" class="inputfeild" type="date" required placeholder="Enter your DOB">
+            </div>
+
+            <!-- GENDER input -->
+             <div class="inputwrap">
+            <label class="labeltext" for="gender">Gender</label><br>
+            <select class="inputfeild" name="dog-names" id="dog-names" required >
+                <option value="male">Male</option>
+                <option value="femlae">Female</option>
+            </select>
+            </div>
+
+
+            <!-- EMAIL input -->
+            <div class="inputwrap">
+            <label class="labeltext" for="email">Email</label><br>
+            <input id="email" class="inputfeild" type="email" required placeholder="Enter Email">
+            </div>
+
+            <!-- ADHAR NUMBER input -->
+            <div class="inputwrap">
+                <label class="labeltext" for="adharno">Adhaar number</label><br>
+                <input id="adharno" class="inputfeild" type="number" required placeholder="Enter Adhaar number">
+                </div>
+                        <!-- ADHAR NUMBER input -->
+            <div class="inputwrap">
+                <label class="labeltext" for="adharno">Sign here</label><br>
+                <span class="inputfeild"></span>
+                </div>
+    
+            <div class="emercont">
+            <h3 class="">Emergency contact<br></h3>
+            <h3 class="highlight ">fill the details for the person to contact in case of emergency</h3>
+
+            <!-- name of emergency contact input -->
+             <div class="flexes">
+             <div class="inputwrap">
+            <label class="labeltext" for="nameofcontact">Name </label><br>
+            <input id="nameofcontact" class="inputfeild" type="text" required placeholder="Enter name">
+            </div>
+
+            <!-- phone of emergency contact input -->
+             <div class="inputwrap">
+            <label class="labeltext" for="phoneofcontact">Contact.</label><br>
+            <input class="inputfeild" type="tel" id="phoneofcontact" name="phone" placeholder="Enter phone number" minlength="10" required>
+            </div>
+
+            <!-- relation with emergency contact input -->
+             <div class="inputwrap">
+            <label class="labeltext" for="relation">Relation</label><br>
+            <input id="relation" class="inputfeild" type="text" required placeholder="Enter Relation">
+            </div>
+            </div>
+            
+            </div>
+
+            <!-- PHOTOGRAPH input -->
+            <div class=" inputer inputwrap">
+                
+                <label class="filechooser labeltext" for="pfp">Attach photograph</label><br>
+                <input id="pfp" class="inputfeild fileattach" type="file" required placeholder="Upload your photo" >
+                <div id="previmage1" class="inputedimage"></div>
+                </div>
+    
+    
+    
+                <!-- ADHAR CARD input -->
+                <div  class="inputer inputwrap">
+                <label class="filechooser labeltext" for="adharfile">Attach Adhaar card</label><br>
+                <input id="adharfile" class="inputfeild  fileattach" type="file" required placeholder="Upload Adhar card" >
+                <div id="previmage2" class="inputedimage"></div>
+                </div>
+            <!-- conditions -->
+             <div class="bigwrap">
+             <div class="conditions">
+            <h3 id="termheading">T&C<br></h3>
+            <ol class="termlist">
+                <li class="term">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quaerat?</li>
+                <li class="term">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quaerat?</li>
+                <li class="term">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quaerat?</li>
+                <li class="term">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quaerat?</li>
+                
+                
+            </ol>
+            </div>
+            <div class="btncover">
+                <button type="button" id="button" onclick="genpdf( )">generate and download pdf</button>
+               </div>  
+        </div>
+        
+       
+       </form>
+      
+    </div>
+
+</body>
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+<script src="script.js"></script>
+</html>
