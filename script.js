@@ -50,8 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function genpdf() {
+    
     const element = document.getElementById("invoice");
-    html2pdf()
-        .from(element)
-        .save();
+    html2pdf().from(element).save();
 }
+document.getElementById('form').onsubmit = function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    genpdf();
+  };
+// document.getElementById("button").addEventListener("click", function(event){
+//     // event.preventDefault();
+//     // genpdf();
+//   });
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = m + "/" + d + "/" + y;

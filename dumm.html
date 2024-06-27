@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pdf generator</title>
+    <title>pdf generator 2</title>
     <link rel="stylesheet" href="syle.css">
 
 </head>
 <body id="body">
-    <form onsubmit="genpdf(); return false" id="form">
+    <form id="form" action="post">
    <div id="invoice">
-    <img id="nav" src="theLogo.png">
-    <div class="firstwrapper">
-        <div class="firstleft">
-           <div class="firstupperleft">
-            <h3>Personal Details<br></h3>
-           </div>
-           <div class="firstlowerleft">
-            <div class="inputwrap">
-                <label class="labeltext" for="email">Email</label><br>
-                <input id="email" class="inputfeild" type="email" required placeholder="Enter Email">
-                </div>
-                
-           </div>
+    <nav><img src="theLogo.png"></nav>
+        <div class="firstwrapper">
+            <div class="firstleft">
+            <div class="firstupperleft">
+                <h3>Personal Details<br></h3>
+            </div>
+            <div class="firstlowerleft">
+                <div class="inputwrap">
+                    <label class="labeltext" for="email">Email</label><br>
+                    <input id="email" class="inputfeild" type="email" required placeholder="Enter Email">
+                    </div>
+                    
+            </div>
+            </div>
+            <div class="firstright">
+                <div id="previmage1" class="inputedimage"></div>
+                <p id="date"></p>
+            </div>
         </div>
-        <div class="firstright">
-            <div id="previmage1" class="inputedimage"></div>
-            <p id="date"></p>
-        </div>
-    </div>
-     <div class="secondwrapper">
+    <div class="secondwrapper">
         <div class="inputwrap">
             <label class="labeltext" for="name">Name</label><br>
             <input id="name" class="inputfeild" type="text" required placeholder="Enter your name">
@@ -40,7 +40,7 @@
             <input class="inputfeild" type="tel" id="phone" name="phone" placeholder="Enter phone number" minlength="10" required>
         </div>
     </div>
-      <div class="thirdwrapper">
+    <div class="thirdwrapper">
         <!-- GENDER input -->
         <div class="inputwrap">
             <label class="labeltext" for="gender">Gender</label><br>
@@ -57,18 +57,18 @@
         </div>
     </div>
     <div class="fourthwrapper">
-        <!-- PHOTOGRAPH input -->
-        <div class=" inputer inputwrap">
-            <label class="filechooser labeltext" for="pfp">photograph</label><br>
-            <input id="pfp" class="inputfeild fileattach" type="file" required placeholder="Upload your photo" >
-        </div>
-         <!-- ADHAR CARD input -->
-         <div  class="inputer inputwrap">
-            <label class="filechooser labeltext" for="adharfile">Adhaar card</label><br>
-            <input id="adharfile" class="inputfeild  fileattach" type="file" required placeholder="Upload Adhar card" >    
-        </div>
-        <div id="previmage2" class="inputedimage"></div>
-</div>
+            <!-- PHOTOGRAPH input -->
+            <div class=" inputer inputwrap">
+                <label class="filechooser labeltext" for="pfp">photograph</label><br>
+                <input id="pfp" class="inputfeild fileattach" type="file" required placeholder="Upload your photo" >
+            </div>
+             <!-- ADHAR CARD input -->
+             <div  class="inputer inputwrap">
+                <label class="filechooser labeltext" for="adharfile">Adhaar card</label><br>
+                <input id="adharfile" class="inputfeild  fileattach" type="file" required placeholder="Upload Adhar card" >    
+            </div>
+            <div id="previmage2" class="inputedimage"></div>
+    </div>
     <div class="fifthwrapper">
         <h3 class="">Emergency contact<br></h3>
         <h3 class="highlight ">fill the details for the person to contact in case of emergency</h3>
@@ -114,9 +114,7 @@
         </div>
     </div>
    </div>
-   <button type="submit" onsubmit="genpdf()" id="button">Save</button>
-   </div>
-   </form>
+   <button type="submit" onclick="genpdf()" id="button">Save </button>
 
 
 </body>

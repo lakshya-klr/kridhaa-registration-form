@@ -7,31 +7,57 @@
     font-family: displayfont;
     src: url("NeueHaasDisplayRoman.ttf");
 }
-#logo{
-    position:absolute;
-    right:0;
-    height: 100px;
-    width: 100px;
-}
-#logo img{
-    object-fit: cover;
-    height: 100%;
+form{
+    margin:auto;
     width: 100%;
+    /* background-color: red; */
 }
+
 #invoice{
     position: relative;
     max-width: 1000px;
     margin:auto;
-    border:1px solid black;
-    height: 99.5vh;
+    /* border:1px solid black; */
+    
     overflow: hidden;
     font-family: displayfont;
+    height: 100%;
+    width: 793px;
+    padding:50px;
+    padding-top:0;
+    scale:1;
+    margin-top:2%;
+    /* background-color: yellow; */
+/* position: absolute;
+    top:0; */
+
+    /* margin:auto; */
+
+    /* scale:0.7; */
+    /* margin-top:-19%; */
 }
-body{
-    background-color:rgb(255, 255, 255);
+#idk{
+    height: 100%;
+    width: 20vw;
+    background-color: blueviolet;
+    position:absolute;
+    right:0;
+    top:0;
+}
+#invoice h3{
+    font-size: small;
+}
+
+#body{
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+    /* height: 1121px; */
+   
+    /* background: gray; */
 }
 nav{
-    height: 12vh;
+    height: 60px;
     width: 100%;
     margin:auto;
     overflow: hidden;
@@ -40,62 +66,48 @@ nav{
     justify-self: center;
     background-color: white;
 }
-nav img{
+#nav {
     overflow: hidden;
     object-fit: contain;
-    height: 90%;
-    width: 90vw;
+    height:80px;
+    width: 100px;
     margin:auto;
+    position: absolute;
+    left:45%;
 
-}
-form{
-    /* background-color: red; */
-    height: 87.5vh;
 }
 .inputwrap{
     height: fit-content;
-    width:20%;
-    padding:10px;
+    width:90%;
+    /* border:1px solid yellow */
     /* background-color: yellow; */
-    /* align-items: center; */
-    margin:1vh;
+  
     margin-bottom:0;
     font-size: medium;
-    /* border:1px solid black; */
+
 }
 
-.content{
-
-    display:flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin:auto;
-    margin-left:5vw;
-    height: 80vh;
-    justify-content: start;
-  
-}
 #filechooser{
     border:1px solid black;
     background-color: white;
-   /* padding:10px; */
+  
    display: flex;
    height: 100%;
    align-self: center;
    text-align: center;
    padding:15px;
    border-radius: 10px;
+   width:100%;
    justify-self: center;
-   /* margin-top:100px; */
-   /* transform: translateY(100%); */
+
 }
 .inputfeild{
     width:100%;
-    font-size: medium;
+    font-size: small;
     height: 5vh;
     border-radius: 10px;
     outline:none;
-    border: 1px solid gray;
+    border: 1px solid rgb(136, 136, 53);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,21 +120,20 @@ form{
     justify-self: center;
 }
 .inputedimage{
-    /* position:absolute; */
+
     height: 18vh;
-    border: 2px solid black;
+    border: 2px solid rgb(136, 136, 53);
     
     outline:none;
     width:5vw;
     border-radius:10px;
-    margin-top:2.5vh;
 }
 
 form h1{
     font-size: 3vh;
     margin:auto;
-    margin-left:5vw;
     width:100%;
+    /* background-color: red; */
 }
 form h3{
     /* margin-left: 5vw;; */
@@ -132,15 +143,14 @@ form h3{
 .highlight{
     color:blue;
     font-style: italic;
-    margin-top:1vh;
-    /* background-color: green; */
+    /* margin-top:1vh; */
     height: fit-content;
     font-size: small;
     width: 90%;
 }
 .termlist{
     /* margin:auto; */
-    margin-top:1vh;
+    /* margin-top:1vh; */
     width:fit-content;
 
     
@@ -154,15 +164,18 @@ form h3{
 #button{
     border-radius: 10px;
     height: 5vh;
-    width: 24%;
-    background-color: rgb(93, 93, 248);
-    color:white;
+    width: 10%;
+    background-color: rgb(228, 228, 76);
+    /* color:blac; */
     cursor:pointer;
+    margin:auto;
+    margin-left:45%;
+
     
 }
 .btncover{
     /* background-color: red; */
-    width:40%;
+    width:60%;
     /* background-color: red; */
     height:fit-content;
     display: flex;
@@ -173,26 +186,23 @@ form h3{
 }
 .signbox{
     /* background-color: green; */
-    height: 50px;
+    height: 30px;
     border-bottom: 2px solid gray;
     width: 250px;
 }
-@media only screen and (max-width:600px) {
+/* @media only screen and (max-width:600px) {
     body{
-        /* background-color: red; */
+        
     }
     .inputwrap{
         width:100%;
         position:relative;
-        /* margin:auto; */
+       
     }
     #invoice{
-        /* width: 100vw;
-        margin: auto;
-        
-        height:00%; */
+
         border: none;
-        /* height: 100vh; */
+        height: 200vh;
     }
     .content{
         margin:auto;
@@ -210,10 +220,7 @@ form h3{
     .term{
         margin-left:2vh;
     }
-    /* .btncover{
-        margin:auto;
-        justify-content:space-evenly;
-    } */
+
     #button{
         width: 50%;
     }
@@ -224,7 +231,7 @@ form h3{
         margin-bottom: 25px;
         margin-right:10px;
     }
-    }
+    } */
 
 
 
@@ -234,7 +241,7 @@ form h3{
         /* background-color: red; */
     }
     .inputedimage{
-        border: 2px solid black;
+        border: 2px solid rgb(136, 136, 53);
         width: 15vh;
         height: 15vh;
         object-fit: cover;
@@ -269,12 +276,12 @@ form h3{
  }
  .conditions{
     /* background-color: blue; */
-    margin-left:2vw;
+    /* margin-left:2vw; */
     height:fit-content;
  }
  .bigwrap{
     height: fit-content;
-    width: fit-content;
+    width: 100%;
     /* background-color: brown; */
  }
  
@@ -284,3 +291,218 @@ form h3{
     align-items: center;
     width: 100%;
  }
+
+ #previmage1{
+    /* margin-left:5vh; */
+    margin-top:-1%;
+ }
+ #signbox{
+    width: 200px;
+    height: 80px;
+ }
+
+ .firstleft{
+/* background-color: yellow; */
+height:100%;
+width:60%;
+ }
+ .firstright{
+/* background-color: green; */
+ }
+ .firstwrapper{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 12%;
+    align-items: end;
+    /* background: brown; */
+
+ }
+ #date{
+    text-align: right;}
+.firstupperleft {
+    height: 50%;
+    /* background-color: blue; */
+    }
+.firstlowerleft {
+    display: flex;
+    align-items: end;
+        height: 50%;
+        /* background-color: red; */
+    }
+.secondwrapper .inputwrap:nth-child(1){
+    width:54%;
+}
+.secondwrapper .inputwrap:nth-child(2){
+    width:42%;
+}
+.secondwrapper{
+    margin-top:10px;
+    display: flex;
+    /* background-color: purple; */
+    align-items: center;
+    justify-content: space-between;
+}
+.thirdwrapper{
+    /* background-color: red; */
+    display: flex;
+    margin-top:10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.thirdwrapper .inputwrap:nth-child(1){
+    width:30%;
+    display: flex;
+    align-items: center;
+}
+.thirdwrapper .inputwrap:nth-child(2){
+    width:65%;
+    display: flex;
+    align-items: center;
+ 
+}
+.fourthwrapper{
+
+    
+    display:flex;
+    align-items: center;
+    width:100%;
+    justify-content: space-between;
+    margin-top:10px;
+    height:8%;
+}
+.fourthwrapper .inputwrap{
+    width:35%;
+
+
+}
+nav{
+    /* margin-bottom: 5%; */
+    /* background-color: red; */
+}
+#previmage2{
+    width:25%;
+    height: 100px;
+}
+.fifthwrapper{
+    /* margin-top:10px; */
+
+    width: 100%;
+
+    height: 6%;
+
+}
+.sixthwrapper{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    /* height: 12%; */
+    margin-top:10px;
+}
+.sixthwrapper .inputwrap:nth-child(1){
+    width:54%;
+}
+.sixthwrapper .inputwrap:nth-child(2){
+    width:42%;
+}
+.sevenwrapper{
+    /* margin-top:10px; */
+}
+.sevenwrapper .inputwrap{
+    width: 100%;
+}
+.lastwrapper{
+    margin-top:10px;
+    /* background-color: red; */
+    height:18%;
+    display: flex;
+    align-items: start;
+    /* justify-content: space-between; */
+}
+.lastleftwrapper{
+    /* background-color: green; */
+    width:54%;
+    height: 100%;
+
+}
+.lastrightwrapper{
+    /* background-color: blue; */
+    width: 36%;
+    height: 100%;
+    margin-left:4%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+}
+.lastleftupper .term{
+    font-size:small;
+}
+#signbox{
+    margin-top:10px;
+}
+.lastleftupper .inputwrap{
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+.labeltext{
+    font-size: small;
+}
+
+
+@media only screen and (max-width:600px) {
+body{
+    /* background-color: blue; */
+
+}
+
+#invoice{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+}
+.inputfeild{
+    font-size: xx-small;
+}
+.firstwrapper{
+    align-items: center;
+}
+.thirdwrapper .inputwrap:nth-child(1){
+    display: block;
+    width:45%;
+}
+.thirdwrapper .inputwrap:nth-child(2){
+    width:45%;
+    display:block;
+}
+.fourthwrapper{
+    align-items: start;
+}
+.fourthwrapper .inputwrap{
+    width:25%;
+    /* height:2vh; */
+}
+.fourthwrapper #previmage2{
+    width:40%;
+}
+#nav{
+    position:relative;
+    margin:auto;
+    left:0;
+    }
+#signbox{
+        width:100%;
+    }
+    .lastwrap{width: 100%;}
+
+.lastrightwrapper{
+    width: 100%;
+    /* background-color: red; */
+}
+.lastleftwrapper .lastleftupper .term{
+    font-size: xx-small;
+}
+#button{
+    width:60%;
+    margin-left: 20%;
+}
+}
